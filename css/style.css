@@ -1,0 +1,401 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand&display=swap');
+
+:root {
+    --cor1: #a19b65;
+    --cor2: #45747a;
+    --cor3: #fa9a3b;
+    --cor4: #e79a8b;
+    
+    --cor01: #555234;
+    --cor02: #213d41;
+    --cor03: #b87029;
+    --cor04: #9e3824;
+
+    --fonte-padrao: 'Quicksand', sans-serif;
+    --fonte-destaque: 'Coiny', cursive;
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+header {
+    background-color: var(--cor01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
+    margin-bottom: 10px;
+}
+
+header > h1 {
+    font-size: 3.2em;
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;
+    color: var(--cor1);
+    text-align: center;
+}
+
+#burguer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--cor1);
+    transition: all .3s ease-in-out;
+  }
+  
+#burguer:hover {
+    color: #d8d4a2;
+}
+
+header > menu {
+    display: none;
+    justify-content: center;
+}  
+
+header > menu > ul > li {
+    padding: 20px;
+    text-align: center; 
+}
+
+header > menu > ul > li > a {
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase; 
+    color: var(--cor1);
+    font-weight: bold;
+    transition: all .2s;
+}
+
+header > menu > ul > li > a:hover {
+    color: #d8d4a2;
+}
+
+body {
+    background: var(--cor2) url(../img/bg.png) center center no-repeat fixed;
+    background-size: cover;
+    transition: all .3s;
+}
+
+h2 {
+    font-family: var(--fonte-destaque); 
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 20px;
+    box-shadow: 0px 2px 6px #00000073;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.numero {
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ponto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 5px;
+    background-color: #45747ad2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .ponto:hover {
+    background-color: var(--cor02);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
+
+.home {
+    margin: 10px;
+    padding: 10px;
+    color: var(--cor2);
+}
+
+.home > h2 {
+    text-shadow: 1px 3px 1px var(--cor02);
+    font-size: 4em;
+    text-align: center;
+}
+
+.galeria > h2 {
+    text-shadow: 1px 3px 1px var(--cor02);
+    text-align: center;
+}
+
+.home > p {
+    font-size: 1.7em;
+    color: var(--cor02);
+    font-weight: bold;
+    padding: 20px 0px 40px 0px;
+    text-align: center;
+}
+
+.care {
+    display: flex;
+    flex-direction: column;
+}
+
+.care > h2 {
+    color: var(--cor3);
+    text-shadow: 1px 3px 1px var(--cor03);
+}
+
+#texto {
+    font-size: 1.7em;
+    text-align: justify;
+    padding: 20px 25px;
+    color: var(--cor03);
+    font-weight: bold;
+}
+
+.care > div {
+    margin: 20px 10px;
+    display: flex;
+}
+
+#bloco1 {
+    background-color: var(--cor1);
+    width: 70%;
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+#bloco2 {
+    background-color: var(--cor2);
+    width: 70%;
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    align-self: flex-end;
+    text-align: right;
+}
+
+#bloco3 {
+    background-color: var(--cor3);
+    width: 70%;
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+#bloco4 {
+    background-color: var(--cor4);
+    width: 70%;
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.espec {
+    margin: 20px 0px;
+}
+
+.espec > h2 {
+    color: var(--cor4);
+    text-shadow: 1px 3px 1px var(--cor04);
+}
+
+.lista-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.espec > .lista-img > ul {
+    margin: 20px;
+}
+
+.espec > .lista-img > ul > li {
+    color: var(--cor04);
+    font-weight: bolder;
+    font-size: 1.4em;
+    text-align: left;
+    padding: 10px 0px;
+    margin: 0px 10px 0px 30px;
+    
+}
+
+.lista-img > img {
+    width: 200px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+.valor {
+    font-size: 1.2em;
+}
+
+.valor > h2 {
+    color: var(--cor1);
+    text-shadow: 1px 3px 1px var(--cor01);
+    margin: 20px;
+    font-size: 2.1em;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.preco {
+    color: var(--cor01);
+}
+
+.preco > h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0px 20px 30px;
+}
+
+.preco > h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0px 20px 30px;
+}
+
+.preco > p {
+    font-size: 1.3em;
+    margin: 0px 0px 0px 30px;
+    padding: 5px;
+}
+
+.info {
+    background-color: var(--cor1);
+    color: #fff;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.info > p {
+    width: 200px;
+}
+
+#redes > a > img {
+    width: 10%;
+}
+
+aside {
+    background-color: var(--cor2);
+    height: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside > h2 {
+    font-size: 2.6em;
+    color: #eeeeee;
+    width: 70%;
+    text-shadow: 1px 3px 1px var(--cor02);
+}
+
+aside > p {
+    text-align: center;
+    font-size: 1.6em;
+    color: #fff;
+    margin: 30px 0px;
+    width: 70%;
+    line-height: 40px;
+}
+
+aside > button {
+    background-color: var(--cor02);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 2em;
+    padding: 20px;
+    width: 70%;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+aside > button:hover {
+    transform: scale(1.1);
+}
+
+aside > button:active {
+    background-color: #eeeeee;
+    color: #213d41;
+}
+
+aside > button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#redes > h2 {
+    color: var(--cor3);
+    text-shadow: 1px 3px 1px var(--cor03);
+    margin: 20px;
+    font-size: 2.4em;
+}
+
+#redes {
+    text-align: center;
+}
+
+#redes > a > img {
+    padding: 10px;
+    filter: invert(74%) sepia(39%) saturate(2099%) hue-rotate(331deg) brightness(99%) contrast(97%);
+    padding: 0px 20px;
+    transition: all .2s;
+}
+
+#redes > a > img:hover {
+    transform: translate(-10%, -10%);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+

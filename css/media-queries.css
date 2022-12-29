@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*arrumar as setinhas da galeria depois*/
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 80%;
+    }
+
+    header > menu > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .galeria {
+        width: 500px;
+        margin: auto;
+    }
+
+    .espec > .lista-img {
+        justify-content: center;
+        font-size: 1.1em;
+        width: 90%;
+        margin: auto;
+    }
+
+    .espec > .lista-img > ul > li {
+        justify-content: baseline;
+        align-items: baseline;
+        
+    }
+
+    .valores {
+        width: 600px;
+        margin: auto;
+    }
+
+    .preco {
+        font-size: 0.8em;
+    }
+
+    aside {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .espec > .lista-img {
+        width: 700px;
+    }
+
+    .valores {
+        width: 80%
+    }
+
+}

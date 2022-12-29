@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo 2023.1</title>
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body onresize="changedSize()">
+    <header>
+            <h1>Biscuits da Tia Mi</h1>
+
+        <i id="burguer" class="material-icons">menu</i>
+
+        <menu id="item">
+            <ul type="none">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cuidados</a></li>
+                <li><a href="#">Especificações</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section class="home">
+            <h2>Seja muito bem-vindo(a)!</h2>
+            <p>Aqui, você encontrará todas as informações que precisa para encomendar seu Pop.</p>
+
+            
+            <div class="galeria">
+            <h2>Aqui estão alguns dos meus trabalhos:</h2>
+                <div class="slide fade">
+                    <div class="numero">1 / 4</div>
+                    <img src="img/biscuit4.png" alt="Imagem de peça de Biscuit">
+                </div>
+
+                <div class="slide fade">
+                    <div class="numero">2 / 4</div>
+                    <img src="img/biscuit3.png" alt="Imagem de peça de Biscuit">
+                </div>
+
+                <div class="slide fade">
+                    <div class="numero">3 / 4</div>
+                    <img src="img/biscuit1.png" alt="Imagem de peça de Biscuit">
+                </div>
+
+                <div class="slide fade">
+                    <div class="numero">4 / 4</div>
+                    <img src="img/biscuit5.png" alt="Imagem de peça de Biscuit">
+                </div>
+
+                <div style="text-align:center">
+                    <span class="ponto" onclick="currentSlide(1)"></span>
+                    <span class="ponto" onclick="currentSlide(2)"></span>
+                    <span class="ponto" onclick="currentSlide(3)"></span>
+                    <span class="ponto" onclick="currentSlide(4)"></span>
+                  </div>
+            </div>
+            
+        </section>
+
+        <section class="care">
+            <h2>Cuidados com a peça</h2>
+            <p id="texto">Todas as peças são produzidas em Biscuit, uma massa feita a partir de amido de milho, cola branca para
+                porcelana fria e alguns conservantes como limão ou vinagre e vaselina. Por isso é importante tomar
+                alguns cuidados:</p>
+
+            <div id="bloco1">
+                <p> O biscuit não é a prova d’água. Apesar de todas as peças serem devidamente envernizadas é importante
+                    evitar contato com água para garantir a durabilidade da peça. Sendo bem cuidada, sua peça de Biscuit
+                    vai durar para sempre!</p>
+            </div>
+
+            <div id="bloco2">
+                <p>Evite deixar sua peça em locais com luz solar direta ou muita umidade.</p>
+            </div>
+
+            <div id="bloco3">
+                <p>As peças produzidas em Biscuit são para exposição, por isso, evite quedas. Caso aconteça, é só colar
+                    a parte descolada com cola instantânea.</p>
+            </div>
+
+            <div id="bloco4">
+                <p>Ao realizar a limpeza, evite produtos químicos. Um simples pano seco já resolve.</p>
+            </div>
+        </section>
+        <section class="espec">
+            <h2>Especificações do Pop</h2>
+            <div class="lista-img">
+                <ul type="square">
+                    <li>Tamanho total aproximado:<br> 10cm - 11cm</li>
+                    <li>Tamanho da cabeça:<br> 4x6cm</li>
+                    <li>Peso aproximado:<br> 60g</li>
+                    <li>Diâmetro da base:<br> 6 a 7cm</li>
+                </ul>
+                <img src="img/biscuit2.png" alt="Imagem de peça de Biscuit">
+            </div>
+        </section>
+        <section class="valor">
+            <h2>Valores e Informações de pagamento</h2>
+                <div class="valores">
+                    <div class="preco">
+                        <h3>Valor do Pop</h3>
+                        <p>A partir de R$170,00 + entrega</p>
+                        <h4>Adicionais</h4>
+                        <p>Pets: R$60,00</p>
+                        <P>Acessórios R$20,00</P>
+                        <p>Noivinhos: R$350,00</p>
+                    </div>
+                    <div class="info">
+                        <p>Pagamento via Pix ou Transferência Bancária: 50% do valor na data da encomenda e 50% na entrega</p>
+                    </div>
+                </div>
+        </section>
+        <aside>
+            <h2>Quer fazer sua encomenda mas a agenda está fechada?</h2>
+            <p>Entre na lista de espera e tenha preferência na agenda do próximo mês!</p>
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfj3aQinN2FtAYG2_UUTHO-GUVXAC2IxLXGe_Z79BJbM239mA/viewform"><strong>lista de espera</strong></a></button>
+        </aside>
+
+            <section id="redes">
+                <h2>Para entrar em contato:</h2>
+                <a href="https://www.instagram.com/biscuitsdatiami/"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="https://wa.me/c/558194019734"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            </section>
+
+    </main>
+
+    <footer>
+        <p> &copy; Natalie Cabral 2022</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

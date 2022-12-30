@@ -32,16 +32,17 @@
     }
 
     .valores {
-        width: 600px;
+        width: 550px;
         margin: auto;
     }
 
     .preco {
-        font-size: 0.8em;
+        font-size: 0.9em;
+        
     }
 
     aside {
-        width: 80%;
+        width: 70%;
         margin: auto;
     }
 }
@@ -54,6 +55,53 @@
 
     .valores {
         width: 80%
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        width: 60%;
+    }
+
+    .home > p {
+        width: 900px;
+        margin: auto;
+    }
+
+    .care {
+        width: 900px;
+        margin: auto;
+    }
+    
+    .espec > .lista-img {
+        width: 900px;
+        font-size: 1.3em;
+    }
+
+    .espec > .lista-img > img {
+        width: 250px;
+    }
+
+    .galeria {
+        width: 650px;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+    
+    .valores {
+        width: 700px;
+        margin: auto;
+    }
+
+    .preco {
+        font-size: 1em;
+    }
+
+    aside {
+        width: 650px;
     }
 
 }

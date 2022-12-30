@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 1200px) {
     main {
-        width: 60%;
+        width: 80%;
     }
 
     .home > p {
@@ -75,12 +75,8 @@
     }
     
     .espec > .lista-img {
-        width: 900px;
+        width: 700px;
         font-size: 1.3em;
-    }
-
-    .espec > .lista-img > img {
-        width: 250px;
     }
 
     .galeria {
@@ -96,12 +92,16 @@
         margin: auto;
     }
 
-    .preco {
-        font-size: 1em;
-    }
+
 
     aside {
         width: 650px;
     }
 
+}
+
+@media screen and (min-width: 1500px) {
+    main {
+        width: 1200px;
+    }
 }

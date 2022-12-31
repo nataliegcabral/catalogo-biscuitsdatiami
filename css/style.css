@@ -23,6 +23,10 @@
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: var(--cor01);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
@@ -398,6 +402,19 @@ aside > button > a {
 
 #redes > a > img:hover {
     transform: translate(-10%, -10%);
+}
+
+#topo {
+    text-align: center;
+    margin: 60px 0px 20px 0px;
+    font-size: 1.4em;
+    color: var();
+}
+
+#topo > a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
 }
 
 footer {

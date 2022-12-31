@@ -11,27 +11,28 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body onresize="changedSize()">
-    <header>
+    <header id="home">
             <h1>Biscuits da Tia Mi</h1>
 
         <i id="burguer" class="material-icons">menu</i>
 
         <menu id="item">
             <ul type="none">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Cuidados</a></li>
-                <li><a href="#">Especificações</a></li>
-                <li><a href="#">Valores</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./#home">Início</a></li>
+                <li><a href="./#care">Cuidados</a></li>
+                <li><a href="./#espec">Especificações</a></li>
+                <li><a href="./#valor">Valores</a></li>
+                <li><a href="./#redes">Contato</a></li>
             </ul>
         </menu>
     </header>
     <main>
-        <section class="home">
+        <section class="home" >
             <h2>Seja muito bem-vindo(a)!</h2>
             <p>Aqui, você encontrará todas as informações que precisa para encomendar seu Pop.</p>
 
@@ -68,7 +69,7 @@
             
         </section>
 
-        <section class="care">
+        <section class="care" id="care">
             <h2>Cuidados com a peça</h2>
             <p id="texto">Todas as peças são produzidas em Biscuit, uma massa feita a partir de amido de milho, cola branca para
                 porcelana fria e alguns conservantes como limão ou vinagre e vaselina. Por isso é importante tomar
@@ -93,7 +94,7 @@
                 <p>Ao realizar a limpeza, evite produtos químicos. Um simples pano seco já resolve.</p>
             </div>
         </section>
-        <section class="espec">
+        <section class="espec" id="espec">
             <h2>Especificações do Pop</h2>
             <div class="lista-img">
                 <ul type="square">
@@ -105,7 +106,7 @@
                 <img src="img/biscuit2.png" alt="Imagem de peça de Biscuit">
             </div>
         </section>
-        <section class="valor">
+        <section class="valor" id="valor">
             <h2>Valores e Informações de pagamento</h2>
                 <div class="valores">
                     <div class="preco">
@@ -131,6 +132,12 @@
                 <h2>Para entrar em contato:</h2>
                 <a href="https://www.instagram.com/biscuitsdatiami/"><img src="img/instagram.png" alt="instagram"></a>
                 <a href="https://wa.me/c/558194019734"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            </section>
+
+            <section id="topo">
+                <a href="./#home">
+                    <p>Voltar para o topo da página <span class="material-icons">arrow_upward</span></p>
+                </a>
             </section>
 
     </main>

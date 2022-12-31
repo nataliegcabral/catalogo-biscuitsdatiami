@@ -34,7 +34,7 @@ header {
 }
 
 header > h1 {
-    font-size: 3.2em;
+    font-size: 2.6em;
     padding: 10px;
     font-family: var(--fonte-destaque);
     font-weight: lighter;
@@ -69,7 +69,7 @@ header > menu > ul > li {
 
 header > menu > ul > li > a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-transform: uppercase; 
     color: var(--cor1);
     font-weight: bold;
@@ -88,7 +88,7 @@ body {
 
 h2 {
     font-family: var(--fonte-destaque); 
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -113,9 +113,9 @@ main {
 
 .ponto {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 10px 5px;
+    height: 12px;
+    width: 12px;
+    margin: 10px 3px;
     background-color: #45747ad2;
     border-radius: 50%;
     display: inline-block;
@@ -143,18 +143,18 @@ main {
 }
 
 .home > h2 {
-    text-shadow: 1px 3px 1px var(--cor02);
-    font-size: 4em;
+    text-shadow: 1px 2px 1px var(--cor02);
+    font-size: 3.1em;
     text-align: center;
 }
 
 .galeria > h2 {
-    text-shadow: 1px 3px 1px var(--cor02);
+    text-shadow: 1px 2px 1px var(--cor02);
     text-align: center;
 }
 
 .home > p {
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--cor02);
     font-weight: bold;
     padding: 20px 0px 40px 0px;
@@ -168,11 +168,11 @@ main {
 
 .care > h2 {
     color: var(--cor3);
-    text-shadow: 1px 3px 1px var(--cor03);
+    text-shadow: 1px 2px 1px var(--cor03);
 }
 
 #texto {
-    font-size: 1.7em;
+    font-size: 1.36em;
     text-align: justify;
     padding: 20px 25px;
     color: var(--cor03);
@@ -187,7 +187,7 @@ main {
 #bloco1 {
     background-color: var(--cor1);
     width: 70%;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     padding: 20px;
     align-self: flex-start;
@@ -197,7 +197,7 @@ main {
 #bloco2 {
     background-color: var(--cor2);
     width: 70%;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     padding: 20px;
     align-self: flex-end;
@@ -207,7 +207,7 @@ main {
 #bloco3 {
     background-color: var(--cor3);
     width: 70%;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     padding: 20px;
     align-self: flex-start;
@@ -217,7 +217,7 @@ main {
 #bloco4 {
     background-color: var(--cor4);
     width: 70%;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     padding: 20px;
     align-self: flex-end;
@@ -230,7 +230,7 @@ main {
 
 .espec > h2 {
     color: var(--cor4);
-    text-shadow: 1px 3px 1px var(--cor04);
+    text-shadow: 1px 2px 1px var(--cor04);
 }
 
 .lista-img {
@@ -241,13 +241,13 @@ main {
 }
 
 .espec > .lista-img > ul {
-    margin: 20px;
+    margin: 10px;
 }
 
 .espec > .lista-img > ul > li {
     color: var(--cor04);
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-align: left;
     padding: 10px 0px;
     margin: 0px 10px 0px 30px;
@@ -256,7 +256,7 @@ main {
 
 .lista-img > img {
     display: inline;
-    width: 200px;
+    width: 160px;
 }
 
 img {
@@ -270,9 +270,9 @@ img {
 
 .valor > h2 {
     color: var(--cor1);
-    text-shadow: 1px 3px 1px var(--cor01);
-    margin: 20px;
-    font-size: 2.1em;
+    text-shadow: 1px 2px 1px var(--cor01);
+    margin: 10px;
+    font-size: 1.7em;
 }
 
 .valores {
@@ -283,7 +283,7 @@ img {
 .preco {
     color: var(--cor01);
     margin: 20px 0px 30px 0px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-bottom: 50px;
     font-weight: bold;
 }
@@ -320,14 +320,15 @@ img {
     width: 250px;
     height: auto;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     line-height: 55px;
     margin-bottom: 30px;
+    font-size: 0.8em;
 }
 
 
 #redes > a > img {
-    width: 80px;
+    width: 60px;
 }
 
 aside {
@@ -341,17 +342,17 @@ aside {
 }
 
 aside > h2 {
-    font-size: 2.6em;
+    font-size: 2em;
     color: #eeeeee;
     width: 70%;
-    text-shadow: 1px 3px 1px var(--cor02);
+    text-shadow: 1px 2px 1px var(--cor02);
 }
 
 aside > p {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.3em;
     color: #fff;
-    margin: 30px 0px;
+    margin: 10px 0px 20px 0px;
     width: 70%;
     line-height: 40px;
 }
@@ -361,8 +362,8 @@ aside > button {
     outline: none;
     border: none;
     border-radius: 20px;
-    font-size: 2em;
-    padding: 20px;
+    font-size: 1.5em;
+    padding: 15px;
     width: 70%;
     transition: all .3s;
     cursor: pointer;
@@ -384,9 +385,9 @@ aside > button > a {
 
 #redes > h2 {
     color: var(--cor3);
-    text-shadow: 1px 3px 1px var(--cor03);
+    text-shadow: 1px 2px 1px var(--cor03);
     margin: 20px;
-    font-size: 2.4em;
+    font-size: 1.8em;
 }
 
 #redes {
@@ -407,7 +408,7 @@ aside > button > a {
 #topo {
     text-align: center;
     margin: 60px 0px 20px 0px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: var();
 }
 

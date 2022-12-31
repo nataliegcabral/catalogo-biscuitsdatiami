@@ -81,7 +81,7 @@ header > menu > ul > li > a:hover {
 }
 
 body {
-    background: var(--cor2) url(../img/bg.png) center center no-repeat fixed;
+    background: var(--cor1) url(../img/bg.png) center center no-repeat fixed;
     background-size: cover;
     transition: all .3s;
 }

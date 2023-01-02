@@ -10,6 +10,11 @@ function changedSize() {
     }
 }
 
+function carregaMenu() {
+    burguer.style.display = 'none'
+    item.style.display = 'block'
+}
+
 burguer.addEventListener('click', () => {
     
     if (item.style.display == 'block') {

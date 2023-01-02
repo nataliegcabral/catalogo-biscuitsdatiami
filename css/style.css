@@ -278,13 +278,13 @@ img {
 .valores {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .preco {
     color: var(--cor01);
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 40px 0px;
     font-size: 0.7em;
-    margin-bottom: 50px;
     font-weight: bold;
 }
 
@@ -324,6 +324,9 @@ img {
     line-height: 55px;
     margin-bottom: 30px;
     font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

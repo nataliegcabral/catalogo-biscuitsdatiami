@@ -2,7 +2,10 @@
 
 /*arrumar as setinhas da galeria depois*/
 @media screen and (min-width: 768px) {
-
+    #burguer {
+        display: none;
+    }
+    
     main {
         width: 80%;
     }
@@ -31,11 +34,6 @@
         
     }
 
-    .valores {
-        width: 550px;
-        margin: auto;
-    }
-
     .preco {
         font-size: 0.9em;
         
@@ -54,7 +52,8 @@
     }
 
     .valores {
-        width: 80%
+        width: 700px;
+        margin: auto;
     }
 
 }
@@ -104,4 +103,5 @@
     main {
         width: 1200px;
     }
+
 }

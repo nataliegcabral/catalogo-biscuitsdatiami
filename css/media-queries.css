@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
-/*arrumar as setinhas da galeria depois*/
+@media screen and (min-width: 768px) {
+    .tamanhos {
+        flex-direction: column-reverse;
+        font-size: 1.1em;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #burguer {
         display: none;
@@ -21,22 +27,17 @@
         margin: auto;
     }
 
-    .espec > .lista-img {
-        justify-content: center;
-        font-size: 1.1em;
-        width: 90%;
-        margin: auto;
+    .tamanhos {
+        background-color: #e79a8b8a;
     }
 
-    .espec > .lista-img > ul > li {
+    .espec > .tamanhos > ul > li {
         justify-content: baseline;
         align-items: baseline;
-        
     }
 
     .preco {
         font-size: 0.9em;
-        
     }
 
     aside {
@@ -46,10 +47,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    
-    .espec > .lista-img {
-        width: 700px;
-    }
 
     .valores {
         width: 700px;
@@ -72,14 +69,9 @@
         width: 900px;
         margin: auto;
     }
-    
-    .espec > .lista-img {
-        width: 700px;
-        font-size: 1.3em;
-    }
 
-    .galeria {
-        width: 650px;
+    .tamanhos > ul {
+        font-size: 1.2em;
     }
 
     h2 {
@@ -90,8 +82,6 @@
         width: 700px;
         margin: auto;
     }
-
-
 
     aside {
         width: 650px;

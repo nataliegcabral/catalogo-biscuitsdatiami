@@ -27,13 +27,17 @@ burguer.addEventListener('click', () => {
 let slideIndex = 1;
 showSlides(slideIndex);
 
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
     let i;
-    let slides = document.querySelectorAll('.slide')
+    let slides = document.querySelectorAll('.slide');
     let ponto = document.querySelectorAll('.ponto');
 
     if (n > slides.length) {
@@ -52,7 +56,9 @@ function showSlides(n) {
         ponto[i].className = ponto[i].className.replace(" active", "");
     }
 
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "block";  
     ponto[slideIndex-1].className += " active";
+
+
 }
 

@@ -28,7 +28,7 @@ html {
 }
 
 header {
-    background-color: var(--cor01);
+    background-color: var(--cor1);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
     margin-bottom: 10px;
 }
@@ -38,7 +38,7 @@ header > h1 {
     padding: 10px;
     font-family: var(--fonte-destaque);
     font-weight: lighter;
-    color: var(--cor1);
+    color: #fff;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ header > h1 {
     cursor: pointer;
     font-size: 2.5em;
     text-align: center;
-    color: var(--cor1);
+    color: #fff;
     transition: all .3s ease-in-out;
   }
   
@@ -71,7 +71,7 @@ header > menu > ul > li > a {
     text-decoration: none;
     font-size: 1.1em;
     text-transform: uppercase; 
-    color: var(--cor1);
+    color: #fff;
     font-weight: bold;
     transition: all .2s;
 }
@@ -97,6 +97,10 @@ main {
     padding: 20px;
     box-shadow: 0px 2px 6px #00000073;
     margin: auto;
+}
+
+section {
+    margin: 30px auto;
 }
 
 .slide {
@@ -126,6 +130,32 @@ main {
     background-color: var(--cor02);
 }
 
+.slides {
+    position: relative;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    padding: 0px;
+    top: 45%;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.arrow:hover {
+    background-color: #00000086;
+}
+
+#prev, #next {
+    font-size: 60px;
+}
+
+#next {
+    right: 0;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -146,6 +176,14 @@ main {
     text-shadow: 1px 2px 1px var(--cor02);
     font-size: 3.1em;
     text-align: center;
+}
+
+.galeria {
+    margin: auto;
+}
+
+img {
+    width: 100%;
 }
 
 .galeria > h2 {
@@ -224,44 +262,38 @@ main {
     text-align: right;
 }
 
-.espec {
-    margin: 20px 0px;
-}
-
 .espec > h2 {
     color: var(--cor4);
     text-shadow: 1px 2px 1px var(--cor04);
 }
 
-.lista-img {
+.tamanhos {
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: left;
     align-items: center;
-    margin: 5px;
+    margin: 20px auto;
+    max-width: 700px;
 }
 
-.espec > .lista-img > ul {
-    margin: 10px;
+.espec > .tamanhos > ul {
+    margin: 10px auto;
+    justify-self: right;
 }
 
-.espec > .lista-img > ul > li {
+.espec > .tamanhos > ul > li {
     color: var(--cor04);
     font-weight: bolder;
     font-size: 1.1em;
     text-align: left;
-    padding: 10px 0px;
-    margin: 0px 10px 0px 30px;
+    padding: 10px;
+    margin-left: 30px;
     
 }
 
-.lista-img > img {
-    display: inline;
-    width: 160px;
-}
-
-img {
-    width: 100%;
-    margin: auto;
+.tamanhos > img {
+    width: 300px;
+    justify-self: left;
 }
 
 .valor {
@@ -425,8 +457,7 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 5px;
-    font-size: 20px;
+    padding: 10px;
     margin-top: 10px;
 }
 

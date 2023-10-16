@@ -1,19 +1,20 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
 
 :root {
-    --cor1: #a19b65;
-    --cor2: #45747a;
-    --cor3: #fa9a3b;
-    --cor4: #e79a8b;
+    --cor1: #cfc88a;
+    --cor2: #6eb2bb;
+    --cor3: #ffba75;
+    --cor4: #f1ab9d;
     
-    --cor01: #555234;
-    --cor02: #213d41;
-    --cor03: #b87029;
-    --cor04: #9e3824;
+    --cor01: #a7a160;
+    --cor02: #46858f;
+    --cor03: #d6914b;
+    --cor04: #d4553b;
 
     --fonte-padrao: 'Quicksand', sans-serif;
-    --fonte-destaque: 'Coiny', cursive;
+    --fonte-destaque: 'Onest', sans-serif;
 }
 
 * {
@@ -29,17 +30,11 @@ html {
 
 header {
     background-color: var(--cor1);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
     margin-bottom: 10px;
-}
-
-header > h1 {
-    font-size: 2.6em;
-    padding: 10px;
-    font-family: var(--fonte-destaque);
-    font-weight: lighter;
-    color: #fff;
-    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 2px 2px 5px #00000048;
 }
 
 #burguer {
@@ -77,13 +72,34 @@ header > menu > ul > li > a {
 }
 
 header > menu > ul > li > a:hover {
-    color: #d8d4a2;
+    color: #a39f63;
 }
 
 body {
-    background: var(--cor1) url(../img/bg.png) center center no-repeat fixed;
     background-size: cover;
     transition: all .3s;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title > img {
+    margin: auto;
+    border-radius: 50%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.1em;
+    padding: 5px;
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;
+    color: var(--cor2);
+    text-align: center;
 }
 
 h2 {
@@ -93,9 +109,7 @@ h2 {
 }
 
 main {
-    background-color: #ffffffce;
     padding: 20px;
-    box-shadow: 0px 2px 6px #00000073;
     margin: auto;
 }
 
@@ -120,7 +134,7 @@ section {
     height: 12px;
     width: 12px;
     margin: 10px 3px;
-    background-color: #45747ad2;
+    background-color: #88bec7d2;
     border-radius: 50%;
     display: inline-block;
     transition: 0.6s ease;
@@ -173,7 +187,6 @@ section {
 }
 
 .home > h2 {
-    text-shadow: 1px 2px 1px var(--cor02);
     font-size: 3.1em;
     text-align: center;
 }
@@ -187,7 +200,6 @@ img {
 }
 
 .galeria > h2 {
-    text-shadow: 1px 2px 1px var(--cor02);
     text-align: center;
 }
 
@@ -206,7 +218,6 @@ img {
 
 .care > h2 {
     color: var(--cor3);
-    text-shadow: 1px 2px 1px var(--cor03);
 }
 
 #texto {
@@ -264,36 +275,36 @@ img {
 
 .espec > h2 {
     color: var(--cor4);
-    text-shadow: 1px 2px 1px var(--cor04);
 }
 
 .tamanhos {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
+    display: grid;
+    grid-template-rows: auto auto;
     align-items: center;
     margin: 20px auto;
-    max-width: 700px;
+    max-width: 600px;
+}
+
+.tamanhos > img {
+    position: relative;
+    margin: auto;
 }
 
 .espec > .tamanhos > ul {
     margin: 10px auto;
-    justify-self: right;
+    position: absolute;
+    align-self: flex-end;
+    justify-self: left;
 }
 
 .espec > .tamanhos > ul > li {
-    color: var(--cor04);
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
     font-weight: bolder;
     font-size: 1.1em;
     text-align: left;
     padding: 10px;
     margin-left: 30px;
-    
-}
-
-.tamanhos > img {
-    width: 300px;
-    justify-self: left;
 }
 
 .valor {
@@ -302,7 +313,6 @@ img {
 
 .valor > h2 {
     color: var(--cor1);
-    text-shadow: 1px 2px 1px var(--cor01);
     margin: 10px;
     font-size: 1.7em;
 }
@@ -315,26 +325,25 @@ img {
 
 .preco {
     color: var(--cor01);
-    margin: 20px 0px 40px 0px;
     font-size: 0.7em;
-    font-weight: bold;
+    width: 300px;
+    margin: 0px 20px;
 }
 
-.preco > h3 {
+.preco > h3, .preco > h4 {
+    color: var(--cor1);
+    border-bottom: 1px solid var(--cor1);
     font-size: 2em;
     font-weight: bold;
-    margin: 0px 0px 20px 30px;
+    padding: 6px;
 }
 
 .preco > h4 {
     font-size: 1.5em;
-    font-weight: bold;
-    margin: 10px 0px 20px 30px;
 }
 
 .preco > p {
     font-size: 1.3em;
-    margin: 0px 0px 0px 30px;
     padding: 5px;
 }
 
@@ -349,15 +358,12 @@ img {
 .info {
     background-color: var(--cor1);
     color: #fff;
-    width: 250px;
-    height: auto;
+    max-width: 250px;
     text-align: center;
     padding: 10px;
-    line-height: 55px;
-    margin-bottom: 30px;
+    line-height: 50px;
     font-size: 0.8em;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -372,15 +378,14 @@ aside {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 aside > h2 {
     font-size: 2em;
     color: #eeeeee;
     width: 70%;
-    text-shadow: 1px 2px 1px var(--cor02);
 }
 
 aside > p {
@@ -420,7 +425,6 @@ aside > button > a {
 
 #redes > h2 {
     color: var(--cor3);
-    text-shadow: 1px 2px 1px var(--cor03);
     margin: 20px;
     font-size: 1.8em;
 }

@@ -11,8 +11,14 @@ function changedSize() {
 }
 
 function carregaMenu() {
-    burguer.style.display = 'none'
-    item.style.display = 'block'
+    if (window.innerWidth >= 768) {
+        burguer.style.display = 'none'
+        item.style.display = 'block'        
+    } else {
+        item.style.display = 'none'
+        burguer.style.display = 'block'
+    }
+
 }
 
 burguer.addEventListener('click', () => {

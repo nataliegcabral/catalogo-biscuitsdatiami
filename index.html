@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biscuits da tia Mi</title>
-    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
 </head>
 
@@ -20,29 +22,29 @@
 
         <i id="burguer" class="material-icons">menu</i>
 
-        <menu id="item">
+        <menu id="navbar">
             <ul type="none">
                 <li><a href="./#home">Início</a></li>
+                <li><a href="./#pops">meu trabalho</a></li>
                 <li><a href="./#care">Cuidados</a></li>
-                <li><a href="./#espec">Especificações</a></li>
-                <li><a href="./#valor">Valores</a></li>
+                <li><a href="./#info">Especificações</a></li>
+                <li><a href="./#prices">Valores</a></li>
                 <li><a href="./#redes">Contato</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <section class="home" id="home">
-            <div class="title">
-                <h1>Seja muito bem-vindo(a) ao ateliê Tia Mi!</h1>
-                <img src="img/michely.png" alt="">
-            </div>
-
+            <h1>Seja muito bem-vindo ao ateliê Tia Mi!</h1>
             <p>Aqui, você encontrará todas as informações que precisa para encomendar seu Pop.</p>
-            
-            <div class="galeria">
-            <h2>Esses são alguns dos meus trabalhos:</h2>
+            <img src="img/michely.png" alt="">
 
-                <div class="slides">
+        </section>
+
+        <section class="pops" id="pops">
+            <div class="pop-gallery">
+                <h2>Esses são alguns dos meus trabalhos:</h2>
+                <div class="gallery-slide">
                     <div class="slide fade">
                         <div class="numero">1 / 4</div>
                         <img src="img/biscuit4.png" alt="Imagem de peça de Biscuit">
@@ -53,7 +55,7 @@
                     </div>
                     <div class="slide fade">
                         <div class="numero">3 / 4</div>
-                        <img src="img/biscuit1.png" alt="Imagem de peça de Biscuit">
+                        <img src="img/biscuit6.png" alt="Imagem de peça de Biscuit">
                     </div>
                     <div class="slide fade">
                         <div class="numero">4 / 4</div>
@@ -62,21 +64,21 @@
                     <span class="arrow material-symbols-outlined" id="prev" onclick="plusSlides(-1)">chevron_left</span>
                     <span class="arrow material-symbols-outlined" id="next" onclick="plusSlides(1)">chevron_right</span>
                 </div>
-
                 <div style="text-align:center">
-
                     <span class="ponto" onclick="currentSlide(1)"></span>
                     <span class="ponto" onclick="currentSlide(2)"></span>
                     <span class="ponto" onclick="currentSlide(3)"></span>
                     <span class="ponto" onclick="currentSlide(4)"></span>
-                  </div>
+                </div>
             </div>
-            
+
         </section>
+
 
         <section class="care" id="care">
             <h2>Cuidados com a peça</h2>
-            <p id="texto">Todas as peças são produzidas em Biscuit, uma massa feita a partir de amido de milho, cola branca para
+            <p id="texto">Todas as peças são produzidas em Biscuit, uma massa feita a partir de amido de milho, cola
+                branca para
                 porcelana fria e alguns conservantes como limão ou vinagre e vaselina. Por isso é importante tomar
                 alguns cuidados:</p>
 
@@ -99,57 +101,55 @@
                 <p>Ao realizar a limpeza, evite produtos químicos. Um simples pano seco já resolve.</p>
             </div>
         </section>
-        <section class="espec" id="espec">
-            <h2>Especificações do Pop</h2>                
-            <div class="tamanhos">
-                <img src="img/biscuit2.png" alt="Peça feita em biscuit da personagem Wednesday Addams da série da Netflix.">
-                <ul type="square">
-                    <li>Tamanho total aproximado:<br> 10cm - 11cm</li>
-                    <li>Tamanho da cabeça:<br> 4x6cm</li>
-                    <li>Peso aproximado:<br> 60g</li>
-                    <li>Diâmetro da base:<br> 6 a 7cm</li>
-                </ul>
 
+        <section class="info" id="info">
+            <h2>Especificações do Pop</h2>
+
+            <div class="info-container">
+                <ul>
+                    <li>Tamanho total aproximado <br><span>10cm - 11cm</span></li>
+                    <li>Tamanho da cabeça <br><span>4x6cm</span></li>
+                    <li>Diâmetro da base <br><span>6 a 7cm</span></li>
+                    <li>Peso aproximado <br><span>60g</span></li>
+                </ul>
             </div>
+
         </section>
-        <section class="valor" id="valor">
+        <section class="prices" id="prices">
             <h2>Valores e Informações de pagamento</h2>
-                <div class="valores">
-                    <div class="preco">
-                        <h3>Valor do Pop</h3>
-                        <p>A partir de<br> <span>R$170,00</span> + entrega</p>
-                        <h4>Adicionais</h4>
-                        <p>Pets<br> <span>R$60,00</span></p>
-                        <P>Acessórios<br> <span>R$20,00</span></P>
-                        <p>Noivinhos<br> <span>R$400,00</span></p>
-                    </div>
-                    <div class="info">
-                        <p>Pagamento via Pix ou Transferência Bancária: 50% do valor na data da encomenda e 50% na entrega</p>
-                    </div>
+                <div class="price-table">
+                    <h3>Valor do Pop</h3>
+                    <p>A partir de <span>R$170,00</span> + entrega</p>
+                    <h4>Adicionais</h4>
+                    <ul>
+                        <li>Pets<br><span>R$60,00</span></li>
+                        <li>Acessórios<br><span>R$20,00</span></li>
+                        <li>Noivinhos<br><span>R$400,00</span></li>
+                    </ul>
+                </div>
+                <div class="pagamento">
+                    <p>Pagamento via Pix ou Transferência Bancária: 50% do valor na data da encomenda e 50% na entrega.
+                    </p>
                 </div>
         </section>
-        <aside>
-            <h2>Quer fazer sua encomenda mas a agenda está fechada?</h2>
-            <p>Entre na lista de espera e tenha preferência na agenda do próximo mês!</p>
-            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfj3aQinN2FtAYG2_UUTHO-GUVXAC2IxLXGe_Z79BJbM239mA/viewform"><strong>lista de espera</strong></a></button>
-        </aside>
-
-            <section id="redes">
-                <h2>Para entrar em contato:</h2>
-                <a href="https://www.instagram.com/biscuitsdatiami/"><img src="img/instagram.png" alt="instagram"></a>
-                <a href="https://wa.me/c/558194019734"><img src="img/whatsapp.png" alt="WhatsApp"></a>
-            </section>
-
-            <section id="topo">
-                <a href="./#home">
-                    <p>Voltar para o topo da página <span class="material-icons">arrow_upward</span></p>
-                </a>
-            </section>
-
     </main>
 
+    <div class="waitlist">
+        <h2>Quer fazer sua encomenda mas a agenda está fechada?</h2>
+        <p>Entre na lista de espera e tenha preferência na agenda do próximo mês!</p>
+        <button><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfj3aQinN2FtAYG2_UUTHO-GUVXAC2IxLXGe_Z79BJbM239mA/viewform"
+                target="_blank"><strong>lista de espera</strong></a></button>
+    </div>
+    <section id="redes">
+        <h2>Entre em contato comigo!</h2>
+        <a href="https://www.instagram.com/biscuitsdatiami/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+        <a href="https://wa.me/c/558194019734" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+    </section>
+
+
     <footer>
-        <p> &copy; Natalie Cabral 2022</p>
+        <p> &copy; 2023 Michely Cândido</p>
     </footer>
 
     <script src="main.js"></script>

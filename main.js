@@ -2,10 +2,10 @@ const burguer = document.querySelector('#burguer')
 
 function changedSize() {
     if (window.innerWidth >= 768) {
-        item.style.display = 'block'
+        navbar.style.display = 'block'
         burguer.style.display = 'none'
     } else {
-        item.style.display = 'none'
+        navbar.style.display = 'none'
         burguer.style.display = 'block'
     }
 }
@@ -13,9 +13,9 @@ function changedSize() {
 function carregaMenu() {
     if (window.innerWidth >= 768) {
         burguer.style.display = 'none'
-        item.style.display = 'block'        
+        navbar.style.display = 'block'        
     } else {
-        item.style.display = 'none'
+        navbar.style.display = 'none'
         burguer.style.display = 'block'
     }
 
@@ -23,10 +23,10 @@ function carregaMenu() {
 
 burguer.addEventListener('click', () => {
     
-    if (item.style.display == 'block') {
-        item.style.display = 'none'
+    if (navbar.style.display == 'block') {
+        navbar.style.display = 'none'
     } else {
-        item.style.display = 'block'
+        navbar.style.display = 'block'
     }
 })
 

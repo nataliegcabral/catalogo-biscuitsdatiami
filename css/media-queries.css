@@ -1,20 +1,6 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    .tamanhos {
-        flex-direction: column-reverse;
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #burguer {
-        display: none;
-    }
-    
-    main {
-        width: 80%;
-    }
 
     header > menu > ul {
         display: flex;
@@ -22,76 +8,64 @@
         justify-content: center;
     }
 
-    .galeria {
-        width: 500px;
-        margin: auto;
-    }
-
-    .tamanhos {
-        background-color: #e79a8b8a;
-    }
-
-    .espec > .tamanhos > ul > li {
-        justify-content: baseline;
-        align-items: baseline;
-    }
-
-    .preco {
-        font-size: 0.9em;
-    }
-
-    aside {
+    .pop-gallery {
         width: 70%;
         margin: auto;
     }
+
+    .gallery-slide {
+        max-width: 900px;
+    }
+
+    .info-container > ul {
+        flex-direction: row;
+    }
+
+    .care {
+        font-size: 1.2em;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
 
-    .valores {
-        width: 700px;
-        margin: auto;
+    .home {
+        grid-template-columns: 1fr 1fr auto;
+        grid-template-rows: 1fr 1fr;
+        margin: 100px 30px 30px 30px;
+        font-size: 1.4em;
+    }
+
+    .home > h1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .home > img {
+        grid-area: 1/2/4/4;
+        width: 90%;
+    }
+
+    .care {
+        max-width: 1300px;
     }
 
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        width: 80%;
+
+    .home {
+        font-size: 1.5em;
     }
 
-    .home > p {
-        width: 900px;
-        margin: auto;
+    .home > img {
+        margin: 1.6em auto;
     }
 
     .care {
-        width: 900px;
         margin: auto;
-    }
-
-    .tamanhos > ul {
-        font-size: 1.2em;
     }
 
     h2 {
         font-size: 3em;
     }
-    
-    .valores {
-        width: 700px;
-        margin: auto;
-    }
-
-    aside {
-        width: 650px;
-    }
-
-}
-
-@media screen and (min-width: 1500px) {
-    main {
-        width: 1200px;
-    }
-
 }

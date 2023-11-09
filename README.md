@@ -6,5 +6,5 @@ Para a realização do projeto, foram feitos levantamentos das principais necess
 
 ![image](https://github.com/nataliegcabral/landing-page-biscuitsdatiami/assets/113628490/901d4c5e-b1d1-4aa7-a552-93dc13c7f8eb)
 
-Depoimento da artesã:
+# Depoimento da artesã: <br>
 “A minha experiência quando começamos o projeto, foi que eu estava começando a empreender na área e eu ainda não tinha um sistema que o cliente tivesse acesso ao meu material, custos, tamanhos, e o projeto ajudou a deixar meu negócio mais completo. Quando o cliente me procura, eu posso providenciar um atendimento mais profissional enviando o site, e ali ele pode ter todas as informações, além da visibilidade e notoriedade que o site trouxe para meu trabalho.”

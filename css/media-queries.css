@@ -32,12 +32,15 @@
     .home {
         grid-template-columns: 1fr 1fr auto;
         grid-template-rows: 1fr 1fr;
-        margin: 100px 30px 30px 30px;
-        font-size: 1.4em;
+        margin-top: 100px;
     }
 
     .home > h1 {
         grid-area: 1/1/2/2;
+    }
+
+    h1, p {
+       margin: auto 40px; 
     }
 
     .home > img {
